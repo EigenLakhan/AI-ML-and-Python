@@ -4,7 +4,8 @@ from pypdf import PdfReader
 from sentence_transformers import SentenceTransformer
 
 # 1. READ & CLEAN PDF
-reader = PdfReader(r"d:\C++\2608.20123v1.pdf")
+pdf_path = input("Enter PDF path: ")
+reader = PdfReader(pdf_path)
 text = ""
 
 for page in reader.pages[:8]:
